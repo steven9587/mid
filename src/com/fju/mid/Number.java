@@ -10,7 +10,14 @@ public class Number {
 		String line = scanner.nextLine();
 		int number = Integer.parseInt(line);
 		for (int a = 1; a <= number; a++) {
-			System.out.print(a + " ");
+			if(a>10){
+				break;
+			}
+			if(a%5 ==0){
+				System.out.print("#"+" "+a+ " ");
+			}else{
+				System.out.print(a + " ");
+			}
 		}
 	}
 
